@@ -28,6 +28,10 @@ return require('packer').startup(function(use)
 
 	--DAP for debugging
 	use 'mfussenegger/nvim-dap'
+	use {
+	use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+		
+	}
 end)
 
 

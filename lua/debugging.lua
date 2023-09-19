@@ -1,6 +1,8 @@
 -- fetch the dap plugin
 local dap = require('dap')
-
+--setup dapui
+local dapui = require('dapui')
+dapui.setup()
 dap.adapters.delve = {
   type = 'server',
   port = '${port}',
